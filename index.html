@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>我的官網</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <a class="brand" href="/">MySite</a>
+    <nav>
+      <a href="/">首頁</a>
+      <a href="about.html">關於我們</a>
+      <a href="contact.html">聯絡我們</a>
+    </nav>
+  </header>
+
+  <main class="wrap hero">
+    <h1>讓你的想法立刻上線 🚀</h1>
+    <p class="muted">這是從零開始建立的官網，稍後我們會部署到 ZEABUR 並嵌入 Dify 聊天。</p>
+    <div class="row">
+      <a class="btn primary" href="contact.html">開始洽詢</a>
+      <a class="btn ghost" href="about.html">了解更多</a>
+    </div>
+
+    <section class="grid">
+      <article class="card"><h3>快速部署</h3><p>接上 GitHub，自動建置與更新。</p></article>
+      <article class="card"><h3>簡單好改</h3><p>純 HTML / CSS，不需框架也能上線。</p></article>
+      <article class="card"><h3>整合 AI</h3><p>待會把 Dify 聊天小工具嵌入。</p></article>
+    </section>
+
+    <section>
+      <h2>（等等會用）Dify 聊天小工具</h2>
+      <p class="muted">之後把 Dify 後台提供的 script 貼在這個段落下方即可：</p>
+      <!-- 在這裡貼上你的 Dify Widget 代碼 -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> MySite</div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
